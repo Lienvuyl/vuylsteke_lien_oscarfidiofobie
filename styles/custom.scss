@@ -1,0 +1,170 @@
+
+/* *************************************************************************
+variabelen
+************************************************************************* */
+$breekpunt1: 560px; /* < gsm */
+$breekpunt2: 768px; /* tablet */
+$breekpunt3: 992px; /* desktop */
+$breekpunt4: 1200px; /* grote desktop */
+
+$color1: #FE9C8F; /* zalmroze */
+$color2: #95B4F2; /* paars */
+$color3: #F2E9DF; /* beige */
+$color4: #B7CCF5; /* lichtpaars */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Saira:400,700");
+
+$font1: 'Saira', sans-serif;
+$font2: 'Roboto', sans-serif;
+
+/* *************************************************************************
+navigatie
+************************************************************************* */
+
+/* navigation menu mobile*/
+.nav-mobile {
+    overflow: hidden;
+    background-color: $color2;
+    position: relative;
+    font-family: $font1;
+    @media (min-width: $breekpunt2){
+        display: none;
+    }
+
+    #nav-items-mobile{
+        display: none;
+      }
+  }
+
+  .nav-mobile a { /* links stijlen*/
+    color: $color4;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+
+    &.icon{ /* hamburgertje stijlen*/
+        background: $color1;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  }
+
+  .nav-mobile a:hover { /* hoveren over links */
+    background-color:$color1;
+    color: $color3;
+  }
+  
+.active { /* titel pagina */
+    background-color: $color1;
+    color: white;
+  }
+.navbar nav-desktop{
+    display: none;
+}
+.titel{
+    display: none;
+    @media (min-width: $breekpunt2) {
+        display: block;
+        font-family: $font1;
+        font-size: 38px;
+        padding: 20px 40px 0px 0px;
+        text-align: right; 
+        color: $color1;
+    } 
+}
+
+/**************************************************************************
+navigatie desktop
+************************************************************************* */
+.nav-desktop{
+    display: none;
+    @media (min-width: $breekpunt2) {
+            display: block;
+            margin-top: 40px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+    
+        }
+}
+
+.nav-item{
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-family: $font1;
+
+    .nav-link{
+        color: $color3;
+        text-decoration: none;
+    }
+}
+.nav-item a:hover{
+    background-color:$color3;
+    color: $color1;
+    padding: 10px;
+}
+
+  /* *************************************************************************
+achtergrond
+************************************************************************* */
+.bg1{
+   background-image: url("../images/bg1-mobiel.jpg");
+    background-size: 100%;
+
+    @media (min-width: $breekpunt2) {
+    
+        background-image: url("../images/bg1-tablet.jpg");
+        background-size: 100%;
+    }
+    @media (min-width: $breekpunt3){
+        background-image: url("../images/bg1-desktop.jpg");
+        background-size: 100%;
+    }
+    @media (min-width: $breekpunt2){
+        background-image: url("../images/bg1-grotedesktop.jpg");
+        background-size: 100%;
+    }
+}
+
+  /* *************************************************************************
+illustratie sjaal
+************************************************************************* */
+.ill-scarf{
+display: none;
+@media (min-width: $breekpunt3){
+    display: block;
+    background-image: url("../images/snake1-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;}
+}
+
+  /* *************************************************************************
+div's 
+************************************************************************* */
+.intro{
+    background-color: green;
+    margin: 5px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 200px;
+}
+.left{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+}
+.middle{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+}
+.right{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+}
+.example{
+    display: block;
+}
+ 
