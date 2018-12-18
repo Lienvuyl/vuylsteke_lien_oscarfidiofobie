@@ -27,7 +27,7 @@ navigatie
     background-color: $color2;
     position: relative;
     font-family: $font1;
-    @media (min-width: $breekpunt2){
+    @media (min-width: $breekpunt3){
         display: none;
     }
 
@@ -66,11 +66,11 @@ navigatie
 }
 .titel{
     display: none;
-    @media (min-width: $breekpunt2) {
+    @media (min-width: $breekpunt3) {
         display: block;
         font-family: $font1;
         font-size: 38px;
-        padding: 20px 40px 0px 0px;
+        padding: 20px 75px 0px 0px;
         text-align: right; 
         color: $color1;
     } 
@@ -81,9 +81,10 @@ navigatie desktop
 ************************************************************************* */
 .nav-desktop{
     display: none;
-    @media (min-width: $breekpunt2) {
+    @media (min-width: $breekpunt3) {
             display: block;
-            margin-top: 40px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+            padding-top: 70px;
+            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
     
         }
 }
@@ -110,17 +111,18 @@ achtergrond
 .bg1{
    background-image: url("../images/bg1-mobiel.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 
     @media (min-width: $breekpunt2) {
-    
         background-image: url("../images/bg1-tablet.jpg");
         background-size: 100%;
     }
     @media (min-width: $breekpunt3){
         background-image: url("../images/bg1-desktop.jpg");
         background-size: 100%;
+        background-repeat: repeat-y;
     }
-    @media (min-width: $breekpunt2){
+    @media (min-width: $breekpunt4){
         background-image: url("../images/bg1-grotedesktop.jpg");
         background-size: 100%;
     }
@@ -131,40 +133,197 @@ illustratie sjaal
 ************************************************************************* */
 .ill-scarf{
 display: none;
-@media (min-width: $breekpunt3){
+    @media (min-width: $breekpunt3){
     display: block;
     background-image: url("../images/snake1-desktop.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 300px;}
+    height: 800px;}
+    @media (min-width: $breekpunt4){
+    height: 1000px;
+    }
 }
 
   /* *************************************************************************
-div's 
+INTRO INDEX
 ************************************************************************* */
 .intro{
-    background-color: green;
-    margin: 5px;
-    padding-bottom: 10px;
+    background-color:$color3;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px 30px 20px 30px;
+    width: 90%;
+    text-align: left;
+
+    @media (min-width: $breekpunt2){
+        margin-top: 50px;
+        margin-left: -60px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: $breekpunt3){
+        width: 100%;
+        margin-top: 70px;
+    }
+    @media (min-width: $breekpunt4){
+        width: 100%;
+        margin-top: 70px;
+    }
+    h1{
+        color: $color2;
+        font-family: $font1;
+        font-size: 28px;
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 20px;
+        @media (min-width: $breekpunt2){
+            font-size: 28px;
+        }
+        @media (min-width: $breekpunt3){
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+    p{
+        color: $color2;
+        font-family: $font2;
+        font-size: 16px;
+        padding-top: 40px;
+        text-align: left;
+        @media (min-width: $breekpunt2){
+            font-size: 18px;
+            padding-top: 50px;
+        }
+        @media (min-width: $breekpunt3){
+            font-size: 18px;
+            padding-top: 60px;
+            text-align: right;
+            padding-right: 30px;
+        }
+    }
+    }
+  /* *************************************************************************
+SYMPTOMEN
+************************************************************************* */
+.vraag-symptomen{
+    margin-top: 60px;
+    font-family: $font1;
+    font-size: 24px;
+    color: $color2;
+    margin-left: 20px;
+
+    @media (min-width: $breekpunt2){
+        margin-left: 0px;
+    }
+    @media (min-width: $breekpunt3){
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+}
+.row .symptomen{
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @media(min-width: $breekpunt2){
+        margin-left: -150px;
+        margin-right: 100px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $breekpunt3){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-left: 100px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+}
+.symptoom-img{
     width: 200px;
-    height: 200px;
+    height: auto;
+    margin-bottom: 20px;
 }
-.left{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
-}
-.middle{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+.symptoom-text{
+    color: $color1;
+    font-family: $font2;
+    font-size: 18px;
+    text-align: center;
 }
 .right{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+    margin-bottom: 50px;
 }
-.example{
-    display: block;
+ /* *************************************************************************
+FOOTER
+************************************************************************* */
+.footer{
+    background-color: $color2;
+    padding-top: 20px;
+    @media (min-width: $breekpunt3){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact{
+         @media (min-width: $breekpunt3){
+            padding-left: 120px;}
+    }
+    .openingsuren{
+        @media (min-width: $breekpunt3){
+            padding-left: 75px;
+        }
+    }
+
+    h3{
+        font-family: $font1;
+        color: $color3;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    p{
+        font-family: $font2;
+        font-size: 12px;
+        color: $color4;
+        line-height: 8px;
+    }
+ a{
+        text-decoration: none;
+        color: $color4;
+    }
 }
+
+/*newsletter*/
+form.form-newsletter {
+    display: table;
+    font-family: $font2;
+    font-size: 12px;
+    color: $color4;
+    line-height: 8px;
+}
+
+div.form-newsletter {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+.button-submit{
+    background-color: $color1;
+    padding: 10px;
+    color: $color3;
+    border-radius: 50px;
+}
+.button-submit:hover{
+    background-color: $color3;
+    color: $color2;
+}
+
+
  
