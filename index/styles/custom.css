@@ -1,0 +1,402 @@
+/* *************************************************************************
+variabelen
+************************************************************************* */
+/* < gsm */
+/* tablet */
+/* desktop */
+/* grote desktop */
+/* zalmroze */
+/* paars */
+/* beige */
+/* lichtpaars */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Saira:400,700");
+/* *************************************************************************
+navigatie
+************************************************************************* */
+/* navigation menu mobile*/
+.nav-mobile {
+  overflow: hidden;
+  background-color: #95B4F2;
+  position: relative;
+  font-family: "Saira", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-mobile #nav-items-mobile {
+  display: none;
+}
+
+.nav-mobile a {
+  /* links stijlen*/
+  color: #B7CCF5;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-mobile a.icon {
+  /* hamburgertje stijlen*/
+  background: #FE9C8F;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-mobile a:hover {
+  /* hoveren over links */
+  background-color: #FE9C8F;
+  color: #F2E9DF;
+}
+
+.active {
+  /* titel pagina */
+  background-color: #FE9C8F;
+  color: white;
+}
+
+.navbar nav-desktop {
+  display: none;
+}
+
+.titel {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .titel {
+    display: block;
+    font-family: "Saira", sans-serif;
+    font-size: 38px;
+    padding: 20px 75px 0px 0px;
+    text-align: right;
+    color: #FE9C8F;
+  }
+}
+
+/**************************************************************************
+navigatie desktop
+************************************************************************* */
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: block;
+    padding-top: 70px;
+    padding-left: 30px;
+    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+  }
+}
+
+.nav-item {
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-family: "Saira", sans-serif;
+}
+
+.nav-item .nav-link {
+  color: #F2E9DF;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #F2E9DF;
+  color: #FE9C8F;
+  padding: 10px;
+}
+
+/* *************************************************************************
+achtergrond
+************************************************************************* */
+.bg1 {
+  background-image: url("../images/bg1-mobiel.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .bg1 {
+    background-image: url("../images/bg1-tablet.jpg");
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg1 {
+    background-image: url("../images/bg1-desktop.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg1 {
+    background-image: url("../images/bg1-grotedesktop.jpg");
+    background-size: 100%;
+  }
+}
+
+/* *************************************************************************
+illustratie sjaal
+************************************************************************* */
+.ill-scarf {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .ill-scarf {
+    display: block;
+    background-image: url("../images/snake1-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ill-scarf {
+    height: 1000px;
+  }
+}
+
+/* *************************************************************************
+INTRO INDEX
+************************************************************************* */
+.intro {
+  background-color: #F2E9DF;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 30px 20px 30px;
+  width: 90%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin-top: 50px;
+    margin-left: -60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+.intro h1 {
+  color: #95B4F2;
+  font-family: "Saira", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+.intro p {
+  color: #95B4F2;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding-top: 40px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .intro p {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro p {
+    font-size: 18px;
+    padding-top: 60px;
+    text-align: right;
+    padding-right: 30px;
+  }
+}
+
+/* *************************************************************************
+SYMPTOMEN
+************************************************************************* */
+.vraag-symptomen {
+  margin-top: 60px;
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: #95B4F2;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .vraag-symptomen {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vraag-symptomen {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vraag-symptomen {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+.row .symptomen {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (min-width: 768px) {
+  .row .symptomen {
+    margin-left: -150px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .symptomen {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row .symptomen {
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+}
+
+.symptoom-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.symptoom-text {
+  color: #FE9C8F;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.right {
+  margin-bottom: 50px;
+}
+
+/* *************************************************************************
+FOOTER
+************************************************************************* */
+.footer {
+  background-color: #95B4F2;
+  padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .contact {
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .openingsuren {
+    padding-left: 75px;
+  }
+}
+
+.footer h3 {
+  font-family: "Saira", sans-serif;
+  color: #F2E9DF;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*newsletter*/
+form.form-newsletter {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 8px;
+}
+
+div.form-newsletter {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+.button-submit {
+  background-color: #FE9C8F;
+  padding: 10px;
+  color: #F2E9DF;
+  border-radius: 50px;
+}
+
+.button-submit:hover {
+  background-color: #F2E9DF;
+  color: #95B4F2;
+}
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,361 @@
+
+/* *************************************************************************
+variabelen
+************************************************************************* */
+$breekpunt1: 560px; /* < gsm */
+$breekpunt2: 768px; /* tablet */
+$breekpunt3: 992px; /* desktop */
+$breekpunt4: 1200px; /* grote desktop */
+
+$color1: #FE9C8F; /* zalmroze */
+$color2: #95B4F2; /* paars */
+$color3: #F2E9DF; /* beige */
+$color4: #B7CCF5; /* lichtpaars */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Saira:400,700");
+
+$font1: 'Saira', sans-serif;
+$font2: 'Roboto', sans-serif;
+
+/* *************************************************************************
+navigatie
+************************************************************************* */
+
+/* navigation menu mobile*/
+.nav-mobile {
+    overflow: hidden;
+    background-color: $color2;
+    position: relative;
+    font-family: $font1;
+    @media (min-width: $breekpunt3){
+        display: none;
+    }
+
+    #nav-items-mobile{
+        display: none;
+      }
+  }
+
+  .nav-mobile a { /* links stijlen*/
+    color: $color4;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+
+    &.icon{ /* hamburgertje stijlen*/
+        background: $color1;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  }
+
+  .nav-mobile a:hover { /* hoveren over links */
+    background-color:$color1;
+    color: $color3;
+  }
+  
+.active { /* titel pagina */
+    background-color: $color1;
+    color: white;
+  }
+.navbar nav-desktop{
+    display: none;
+}
+.titel{
+    display: none;
+    @media (min-width: $breekpunt3) {
+        display: block;
+        font-family: $font1;
+        font-size: 38px;
+        padding: 20px 75px 0px 0px;
+        text-align: right; 
+        color: $color1;
+    } 
+}
+
+/**************************************************************************
+getuigenissen
+************************************************************************* */
+.img-getuigenissen{
+    display: block;
+    background-color: $color1;
+    width: 200px;
+    height: auto;
+}
+.txt-getuigenissen{
+    p{
+        font-family: $font2;
+        font-size: 12px;
+        color: $color3;
+    }
+
+}
+/**************************************************************************
+navigatie desktop
+************************************************************************* */
+.nav-desktop{
+    display: none;
+    @media (min-width: $breekpunt3) {
+            display: block;
+            padding-top: 70px;
+            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+    
+        }
+}
+
+.nav-item{
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-family: $font1;
+
+    .nav-link{
+        color: $color3;
+        text-decoration: none;
+    }
+}
+.nav-item a:hover{
+    background-color:$color3;
+    color: $color1;
+    padding: 10px;
+}
+
+  /* *************************************************************************
+achtergrond
+************************************************************************* */
+.bg1{
+   background-image: url("../images/bg2-mobiel.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+
+    @media (min-width: $breekpunt2) {
+        background-image: url("../images/bg2-tablet.jpg");
+        background-size: 100%;
+    }
+    @media (min-width: $breekpunt3){
+        background-image: url("../images/bg2-desktop.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    @media (min-width: $breekpunt4){
+        background-image: url("../images/bg2-grotedesktop.jpg");
+        background-size: 100%;
+    }
+}
+
+  /* *************************************************************************
+illustratie sjaal
+************************************************************************* */
+.ill-scarf{
+display: none;
+    @media (min-width: $breekpunt3){
+    display: block;
+    background-color: $color1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;}
+    @media (min-width: $breekpunt4){
+    height: 1000px;
+    }
+}
+
+  /* *************************************************************************
+INTRO VOORKOMEN
+************************************************************************* */
+.intro{
+    background-color:$color3;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px 30px 20px 30px;
+    width: 90%;
+    text-align: left;
+
+    @media (min-width: $breekpunt2){
+        margin-top: 50px;
+        margin-left: -60px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: $breekpunt3){
+        width: 100%;
+        margin-top: 70px;
+    }
+    @media (min-width: $breekpunt4){
+        width: 100%;
+        margin-top: 70px;
+    }
+    h1{
+        color: $color2;
+        font-family: $font1;
+        font-size: 28px;
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        @media (min-width: $breekpunt2){
+            font-size: 28px;
+        }
+        @media (min-width: $breekpunt3){
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+    p{
+        color: $color2;
+        font-family: $font2;
+        font-size: 16px;
+        text-align: left;
+        @media (min-width: $breekpunt2){
+            font-size: 18px;
+            padding-top: 50px;
+        }
+        @media (min-width: $breekpunt3){
+            font-size: 18px;
+            padding-top: 60px;
+            text-align: right;
+            padding-right: 30px;
+        }
+    }
+    }
+  /* *************************************************************************
+VOORKOMEN
+************************************************************************* */
+.vermijden-img{
+    width: 200px;
+    height: 200px;
+    background: $color1;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    @media (min-width: $breekpunt2){
+        width: 250px;
+        height: 250px;
+        margin-left: -60px;
+        margin-top: 30px;
+        padding: 0px;
+    }
+    @media (min-width: $breekpunt3){
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+    }
+    @media (min-width: $breekpunt4){
+        width: 350px;
+        height: 350px;
+    }
+}
+.vermijden-txt{
+    margin-left: 170px;
+    margin-right: 20px;
+
+    @media (min-width: $breekpunt2){
+        margin-top: 30px;
+        margin-left: -40px;
+        margin-right: 90px;
+    }
+    @media (min-width: $breekpunt3){
+        margin-left: 0px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-right: 200px;
+    }
+    h4{
+        font-family: $font1;
+        font-size: 24px;
+        color: $color3;
+    @media (min-width: $breekpunt2){
+        color: $color1;
+    }
+    }
+    p{
+        font-family: $font2;
+        font-size: 16px;
+        color: $color1;
+    @media (min-width: $breekpunt2){
+        color: $color4;
+    }
+    }
+}
+.vermijden-1{
+    margin-top: 20px;
+
+    @media (min-width: $breekpunt3){
+        margin-top: 40px;
+    }
+}
+.vermijden-4{
+    margin-bottom: 30px;
+}
+
+ /* *************************************************************************
+FOOTER
+************************************************************************* */
+.footer{
+    background-color: $color2;
+    padding-top: 20px;
+    @media (min-width: $breekpunt3){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact{
+         @media (min-width: $breekpunt3){
+            padding-left: 120px;}
+    }
+    .openingsuren{
+        @media (min-width: $breekpunt3){
+            padding-left: 75px;
+        }
+    }
+
+    h3{
+        font-family: $font1;
+        color: $color3;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    p{
+        font-family: $font2;
+        font-size: 12px;
+        color: white;
+        line-height: 8px;
+    }
+ a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/*newsletter*/
+form.form-newsletter {
+    display: table;
+    font-family: $font2;
+    font-size: 12px;
+    color: white;
+    line-height: 8px;
+}
+
+div.form-newsletter {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+.button-submit{
+    background-color: $color1;
+    padding: 10px;
+    color: $color3;
+    border-radius: 50px;
+}
+.button-submit:hover{
+    background-color: $color3;
+    color: $color2;
+}
+
+
+ 

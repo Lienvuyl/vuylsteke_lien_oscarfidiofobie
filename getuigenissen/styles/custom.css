@@ -81,6 +81,22 @@ navigatie
 }
 
 /**************************************************************************
+getuigenissen
+************************************************************************* */
+.img-getuigenissen {
+  display: block;
+  background-color: #FE9C8F;
+  width: 200px;
+  height: auto;
+}
+
+.txt-getuigenissen p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #F2E9DF;
+}
+
+/**************************************************************************
 navigatie desktop
 ************************************************************************* */
 .nav-desktop {
@@ -117,29 +133,29 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1 {
-  background-image: url("../images/bg1-mobiel.jpg");
+  background-image: url("../images/bg2-mobiel.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url("../images/bg1-tablet.jpg");
+    background-image: url("../images/bg2-tablet.jpg");
     background-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bg1 {
-    background-image: url("../images/bg1-desktop.jpg");
+    background-image: url("../images/bg2-desktop.jpg");
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .bg1 {
-    background-image: url("../images/bg1-grotedesktop.jpg");
+    background-image: url("../images/bg2-grotedesktop.jpg");
     background-size: 100%;
   }
 }
@@ -154,7 +170,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../images/snake1-desktop.png");
+    background-color: #FE9C8F;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;
@@ -168,7 +184,7 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-INTRO INDEX
+INTRO VOORKOMEN
 ************************************************************************* */
 .intro {
   background-color: #F2E9DF;
@@ -209,6 +225,7 @@ INTRO INDEX
   text-align: right;
   padding-right: 10px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -228,7 +245,6 @@ INTRO INDEX
   color: #95B4F2;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  padding-top: 40px;
   text-align: left;
 }
 
@@ -249,79 +265,103 @@ INTRO INDEX
 }
 
 /* *************************************************************************
-SYMPTOMEN
+VOORKOMEN
 ************************************************************************* */
-.vraag-symptomen {
-  margin-top: 60px;
+.vermijden-img {
+  width: 200px;
+  height: 200px;
+  background: #FE9C8F;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .vermijden-img {
+    width: 250px;
+    height: 250px;
+    margin-left: -60px;
+    margin-top: 30px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vermijden-img {
+    width: 300px;
+    height: 300px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vermijden-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.vermijden-txt {
+  margin-left: 170px;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .vermijden-txt {
+    margin-top: 30px;
+    margin-left: -40px;
+    margin-right: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vermijden-txt {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vermijden-txt {
+    margin-right: 200px;
+  }
+}
+
+.vermijden-txt h4 {
   font-family: "Saira", sans-serif;
   font-size: 24px;
-  color: #95B4F2;
-  margin-left: 20px;
+  color: #F2E9DF;
 }
 
 @media (min-width: 768px) {
-  .vraag-symptomen {
-    margin-left: 0px;
+  .vermijden-txt h4 {
+    color: #FE9C8F;
   }
 }
 
-@media (min-width: 992px) {
-  .vraag-symptomen {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .vraag-symptomen {
-    margin-left: 150px;
-    margin-bottom: 20px;
-  }
-}
-
-.row .symptomen {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-@media (min-width: 768px) {
-  .row .symptomen {
-    margin-left: -150px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 992px) {
-  .row .symptomen {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .row .symptomen {
-    margin-left: 100px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-  }
-}
-
-.symptoom-img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.symptoom-text {
-  color: #FE9C8F;
+.vermijden-txt p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
+  color: #FE9C8F;
 }
 
-.right {
-  margin-bottom: 50px;
+@media (min-width: 768px) {
+  .vermijden-txt p {
+    color: #B7CCF5;
+  }
+}
+
+.vermijden-1 {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .vermijden-1 {
+    margin-top: 40px;
+  }
+}
+
+.vermijden-4 {
+  margin-bottom: 30px;
 }
 
 /* *************************************************************************
@@ -361,13 +401,13 @@ FOOTER
 .footer p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  color: #B7CCF5;
+  color: white;
   line-height: 8px;
 }
 
 .footer a {
   text-decoration: none;
-  color: #B7CCF5;
+  color: white;
 }
 
 /*newsletter*/
@@ -375,7 +415,7 @@ form.form-newsletter {
   display: table;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  color: #B7CCF5;
+  color: white;
   line-height: 8px;
 }
 

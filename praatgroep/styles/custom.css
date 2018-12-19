@@ -1,0 +1,422 @@
+/* *************************************************************************
+variabelen
+************************************************************************* */
+/* < gsm */
+/* tablet */
+/* desktop */
+/* grote desktop */
+/* zalmroze */
+/* paars */
+/* beige */
+/* lichtpaars */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Saira:400,700");
+/* *************************************************************************
+navigatie
+************************************************************************* */
+/* navigation menu mobile*/
+.nav-mobile {
+  overflow: hidden;
+  background-color: #95B4F2;
+  position: relative;
+  font-family: "Saira", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-mobile #nav-items-mobile {
+  display: none;
+}
+
+.nav-mobile a {
+  /* links stijlen*/
+  color: #B7CCF5;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-mobile a.icon {
+  /* hamburgertje stijlen*/
+  background: #FE9C8F;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-mobile a:hover {
+  /* hoveren over links */
+  background-color: #FE9C8F;
+  color: #F2E9DF;
+}
+
+.active {
+  /* titel pagina */
+  background-color: #FE9C8F;
+  color: white;
+}
+
+.navbar nav-desktop {
+  display: none;
+}
+
+.titel {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .titel {
+    display: block;
+    font-family: "Saira", sans-serif;
+    font-size: 38px;
+    padding: 20px 75px 0px 0px;
+    text-align: right;
+    color: #FE9C8F;
+  }
+}
+
+/**************************************************************************
+navigatie desktop
+************************************************************************* */
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: block;
+    padding-top: 70px;
+    padding-left: 30px;
+    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+  }
+}
+
+.nav-item {
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-family: "Saira", sans-serif;
+}
+
+.nav-item .nav-link {
+  color: #F2E9DF;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #F2E9DF;
+  color: #FE9C8F;
+  padding: 10px;
+}
+
+/* *************************************************************************
+achtergrond
+************************************************************************* */
+.bg1 {
+  background-image: url("../images/bg1-mobiel.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+@media (min-width: 768px) {
+  .bg1 {
+    background-image: url("../images/bg1-tablet.jpg");
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg1 {
+    background-image: url("../images/bg1-desktop.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg1 {
+    background-image: url("../images/bg1-grotedesktop.jpg");
+    background-size: 100%;
+  }
+}
+
+/* *************************************************************************
+illustratie sjaal
+************************************************************************* */
+.ill-scarf {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .ill-scarf {
+    display: block;
+    background-color: #FE9C8F;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ill-scarf {
+    height: 1000px;
+  }
+}
+
+/* *************************************************************************
+WEEK SCHEMA
+************************************************************************* */
+.uitleg {
+  margin-top: 20px;
+}
+
+.uitleg p {
+  font-family: "Saira", sans-serif;
+  font-size: 12px;
+  color: #F2E9DF;
+}
+
+@media (min-width: 992px) {
+  .uitleg p {
+    color: #95B4F2;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uitleg p {
+    margin-left: 80px;
+  }
+}
+
+.uitleg .groep {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  color: #FE9C8F;
+  text-align: center;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.uitleg .A {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #95B4F2;
+          text-decoration-color: #95B4F2;
+}
+
+.uitleg .B {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F2E9DF;
+          text-decoration-color: #F2E9DF;
+}
+
+.uitleg .C {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FE9C8F;
+          text-decoration-color: #FE9C8F;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .uitleg .C {
+    margin-bottom: 0px;
+  }
+}
+
+.week {
+  background-color: #B7CCF5;
+  width: 80%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .week {
+    width: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .week {
+    width: 100px;
+    margin-right: 10px;
+    height: 450px;
+  }
+}
+
+.week h2 {
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: #FE9C8F;
+}
+
+.week p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .week p {
+    padding: 5px;
+  }
+}
+
+.week .groep-A, .week .groep-B, .week .groep-C {
+  border-width: 1px;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .week .groep-A, .week .groep-B, .week .groep-C {
+    margin-left: 10px;
+    width: 80%;
+  }
+}
+
+.week .groep-A {
+  border-style: solid;
+  border-color: #95B4F2;
+}
+
+.week .groep-B {
+  border-style: solid;
+  border-color: #F2E9DF;
+}
+
+.week .groep-C {
+  border-style: solid;
+  border-color: #FE9C8F;
+}
+
+.weekschema {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@media (min-width: $breekpunt2){
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }*/
+}
+
+@media (min-width: 992px) {
+  .weekschema {
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flexwrap: nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .eerste-blok, .tweede-blok, .derde-blok {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+/* *************************************************************************
+FOOTER
+************************************************************************* */
+.footer {
+  background-color: #95B4F2;
+  padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .contact {
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .openingsuren {
+    padding-left: 75px;
+  }
+}
+
+.footer h3 {
+  font-family: "Saira", sans-serif;
+  color: #F2E9DF;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*newsletter*/
+form.form-newsletter {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 8px;
+}
+
+div.form-newsletter {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+.button-submit {
+  background-color: #FE9C8F;
+  padding: 10px;
+  color: #F2E9DF;
+  border-radius: 50px;
+}
+
+.button-submit:hover {
+  background-color: #F2E9DF;
+  color: #95B4F2;
+}
+/*# sourceMappingURL=custom.css.map */
