@@ -222,6 +222,7 @@ INTRO VOORKOMEN
   .intro h1 {
     font-size: 60px;
     text-align: center;
+    padding-bottom: 0px;
   }
 }
 
@@ -242,7 +243,7 @@ INTRO VOORKOMEN
 @media (min-width: 992px) {
   .intro p {
     font-size: 18px;
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: right;
     padding-right: 30px;
   }
@@ -252,9 +253,9 @@ INTRO VOORKOMEN
 VOORKOMEN
 ************************************************************************* */
 .vermijden-img {
+  background-image: url("../images/vermijden-colltrui.png");
   width: 200px;
   height: 200px;
-  background: #FE9C8F;
   margin-left: 60px;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -274,7 +275,7 @@ VOORKOMEN
   .vermijden-img {
     width: 300px;
     height: 300px;
-    margin-left: 0px;
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -282,6 +283,56 @@ VOORKOMEN
   .vermijden-img {
     width: 350px;
     height: 350px;
+  }
+}
+
+.colltrui {
+  background-image: url("../images/vermijden-colltrui.png");
+  background-size: 100%;
+  background-color: #B7CCF5;
+}
+
+@media (min-width: 992px) {
+  .colltrui {
+    background-color: transparent;
+  }
+}
+
+.rits {
+  background-image: url("../images/vermijden-rits.png");
+  background-size: 100%;
+  background-color: #B7CCF5;
+}
+
+@media (min-width: 992px) {
+  .rits {
+    background-color: transparent;
+  }
+}
+
+.haardos {
+  background-image: url("../images/vermijden-langehaardos.png");
+  background-size: 100%;
+  background-color: #B7CCF5;
+}
+
+@media (min-width: 992px) {
+  .haardos {
+    background-color: transparent;
+    margin-top: -20px;
+  }
+}
+
+.kussen {
+  background-image: url("../images/vermijden-kersenpitkussen.png");
+  background-size: 100%;
+  background-color: #B7CCF5;
+}
+
+@media (min-width: 992px) {
+  .kussen {
+    background-color: transparent;
+    margin-top: -40px;
   }
 }
 
@@ -300,7 +351,8 @@ VOORKOMEN
 
 @media (min-width: 992px) {
   .vermijden-txt {
-    margin-left: 0px;
+    margin-top: 40px;
+    margin-right: 140px;
   }
 }
 
@@ -313,7 +365,7 @@ VOORKOMEN
 .vermijden-txt h4 {
   font-family: "Saira", sans-serif;
   font-size: 24px;
-  color: #F2E9DF;
+  color: #B7CCF5;
 }
 
 @media (min-width: 768px) {

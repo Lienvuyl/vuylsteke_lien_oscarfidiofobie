@@ -94,9 +94,20 @@ getuigenissen
   color: #FE9C8F;
 }
 
+@media (min-width: 560px) {
+  .inleiding {
+    text-align: left;
+    font-size: 32px;
+    margin-left: 90px;
+    margin-right: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   .inleiding {
     text-align: right;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -115,6 +126,12 @@ getuigenissen
   margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .getuigenissen-1 {
+    margin-top: 0px;
+  }
+}
+
 .img__wrap {
   position: relative;
   width: 300px;
@@ -122,13 +139,23 @@ getuigenissen
   margin-bottom: 80px;
   margin-left: 50px;
   margin-right: 30px;
+  padding: 0;
 }
 
 @media (min-width: 560px) {
   .img__wrap {
-    margin-bottom: 250px;
-    margin-left: 0px;
+    margin-left: 100px;
     margin-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img__wrap {
+    margin-bottom: 40px;
+    width: 150px;
+    height: 150px;
+    margin-left: -20px;
+    margin-right: 20px;
   }
 }
 
@@ -137,28 +164,42 @@ getuigenissen
     width: 200px;
     height: 200px;
     margin-bottom: 40px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .img__wrap {
-    margin-bottom: 80px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 }
 
 .img-getuigenissen {
-  width: 100%;
+  width: 300px;
+  height: 300px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 768px) {
   .img-getuigenissen {
-    width: 75%;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media (min-width: 992px) {
   .img-getuigenissen {
-    width: 100%;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-getuigenissen {
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -172,37 +213,61 @@ getuigenissen
   color: white;
   visibility: hidden;
   opacity: 0;
+  width: 300px;
+  height: 300px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 768px) {
   .txt-getuigenissen {
-    width: 400px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media (min-width: 992px) {
   .txt-getuigenissen {
     width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt-getuigenissen {
+    width: 250px;
+    height: 250px;
   }
 }
 
 .txt-getuigenissen p {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   color: #F2E9DF;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
-  top: 40%;
-  left: 30%;
-  right: 20%;
-  margin: 0 0 0 0;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+}
+
+@media (min-width: 768px) {
+  .txt-getuigenissen p {
+    font-size: 12px;
+    top: 5%;
+    left: 5%;
+  }
 }
 
 @media (min-width: 992px) {
   .txt-getuigenissen p {
-    top: 0;
-    left: 0;
-    right: 0;
+    font-size: 16px;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt-getuigenissen p {
+    font-size: 20px;
   }
 }
 
