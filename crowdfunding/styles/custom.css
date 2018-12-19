@@ -170,15 +170,23 @@ illustratie sjaal
 /* *************************************************************************
 CROWDFUNDING
 ************************************************************************* */
-.titel h1 {
+.crowdfunding-titel h1 {
   font-family: "Saira", sans-serif;
   font-size: 50px;
   color: #F2E9DF;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .intro {
   margin-top: 40px;
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
 }
 
 .intro h2 {
@@ -193,15 +201,47 @@ CROWDFUNDING
   color: #F2E9DF;
 }
 
+@media (min-width: 1200px) {
+  .intro p {
+    color: #95B4F2;
+  }
+}
+
 .uitleg {
   text-align: right;
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .uitleg h3 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #FE9C8F;
+}
+
+@media (min-width: 1200px) {
+  .progress {
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+}
+
+.btn {
+  background-color: #FE9C8F;
+  border-style: none;
+  font-family: "Saira", sans-serif;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    margin-left: 100px;
+  }
+}
+
+.btn:hover {
+  background-color: #95B4F2;
 }
 
 /* *************************************************************************

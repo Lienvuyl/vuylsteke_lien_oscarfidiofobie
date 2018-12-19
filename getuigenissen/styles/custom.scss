@@ -120,6 +120,9 @@ getuigenissen
         height: 200px;
         margin-bottom: 40px;
     }
+    @media (min-width: $breekpunt4){
+        margin-bottom: 80px;
+    }
 }
 .img-getuigenissen{
     width: 100%;

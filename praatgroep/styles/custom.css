@@ -133,7 +133,6 @@ achtergrond
   .bg1 {
     background-image: url("../images/bg1-desktop.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
   }
 }
 

@@ -140,6 +140,12 @@ getuigenissen
   }
 }
 
+@media (min-width: 1200px) {
+  .img__wrap {
+    margin-bottom: 80px;
+  }
+}
+
 .img-getuigenissen {
   width: 100%;
 }
