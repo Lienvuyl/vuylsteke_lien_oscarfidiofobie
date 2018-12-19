@@ -198,10 +198,16 @@ WEEK SCHEMA
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   padding: 5px;
-  color: #FE9C8F;
-  text-align: center;
+  color: #F2E9DF;
+  text-align: right;
   margin-left: 90px;
-  margin-right: 90px;
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .uitleg .groep {
+    color: #FE9C8F;
+  }
 }
 
 .uitleg .A {

@@ -166,10 +166,13 @@ WEEK SCHEMA
         font-family: $font2;
         font-size: 12px;
         padding: 5px;
-        color: $color1;
-        text-align: center;
+        color: $color3;
+        text-align: right;
         margin-left: 90px;
-        margin-right: 90px;
+        margin-right: 40px;
+        @media(min-width: $breekpunt2){
+            color: $color1;
+        }
     }
     .A{
         text-decoration: underline;

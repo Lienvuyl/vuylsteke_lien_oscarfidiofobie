@@ -143,120 +143,54 @@ display: none;
     height: 1000px;
     }
 }
-
   /* *************************************************************************
-INTRO INDEX
+CROWDFUNDING
 ************************************************************************* */
-.intro{
-    background-color:$color3;
-    margin: auto;
-    margin-top: 30px;
-    padding: 20px 30px 20px 30px;
-    width: 90%;
-    text-align: left;
-
-    @media (min-width: $breekpunt2){
-        margin-top: 50px;
-        margin-left: -60px;
-        padding-bottom: 30px;
-    }
-    @media (min-width: $breekpunt3){
-        width: 100%;
-        margin-top: 70px;
-    }
-    @media (min-width: $breekpunt4){
-        width: 100%;
-        margin-top: 70px;
-    }
+.titel{
     h1{
-        color: $color2;
+            font-family: $font1;
+            font-size: 50px;
+            color:$color3;
+            margin-bottom: 50px;
+
+    }
+}
+.intro{
+    margin-top: 40px;
+    h2{
         font-family: $font1;
-        font-size: 28px;
-        text-transform: uppercase;
-        text-align: right;
-        padding-right: 10px;
-        padding-top: 20px;
-        @media (min-width: $breekpunt2){
-            font-size: 28px;
-        }
-        @media (min-width: $breekpunt3){
-            font-size: 60px;
-            text-align: center;
-        }
+        font-size: 30px;
+        color: $color1;
     }
     p{
-        color: $color2;
         font-family: $font2;
-        font-size: 16px;
-        padding-top: 40px;
-        text-align: left;
-        @media (min-width: $breekpunt2){
-            font-size: 18px;
-            padding-top: 50px;
-        }
-        @media (min-width: $breekpunt3){
-            font-size: 18px;
-            padding-top: 60px;
-            text-align: right;
-            padding-right: 30px;
-        }
+        font-size: 18px;
+        color:$color3;
     }
+}
+.uitleg{
+    text-align: right; 
+    margin-bottom: 60px;
+    h3{
+        font-family: $font2;
+        font-size: 18px;
+        color:$color1;
     }
+}
   /* *************************************************************************
-SYMPTOMEN
+PROGRESS BAR
 ************************************************************************* */
-.vraag-symptomen{
-    margin-top: 60px;
-    font-family: $font1;
-    font-size: 24px;
-    color: $color2;
-    margin-left: 20px;
-
-    @media (min-width: $breekpunt2){
-        margin-left: 0px;
-    }
-    @media (min-width: $breekpunt3){
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    @media (min-width: $breekpunt4){
-        margin-left: 150px;
-        margin-bottom: 20px;
-    }
+.bg-scarf{
+    background-image: url("../images/progress-scarf.png");
+    background-size: 100%;
+    background-color: white;
 }
-.row .symptomen{
-    margin-left: 50px;
-    margin-right: 50px;
-
-    @media(min-width: $breekpunt2){
-        margin-left: -150px;
-        margin-right: 100px;
-        margin-bottom: 40px;
-    }
-
-    @media (min-width: $breekpunt3){
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    @media (min-width: $breekpunt4){
-        margin-left: 100px;
-        margin-bottom: 0px;
-        margin-top: 20px;
-    }
-}
-.symptoom-img{
-    width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-}
-.symptoom-text{
-    color: $color1;
-    font-family: $font2;
-    font-size: 18px;
-    text-align: center;
-}
-.right{
-    margin-bottom: 50px;
+.progress{
+    border-style: solid;
+    border-color: $color1;
+    border-width: 1px;
+    background-color: white;
+    height: 30px;
 }
  /* *************************************************************************
 FOOTER

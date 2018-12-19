@@ -168,160 +168,57 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-INTRO INDEX
+CROWDFUNDING
 ************************************************************************* */
-.intro {
-  background-color: #F2E9DF;
-  margin: auto;
-  margin-top: 30px;
-  padding: 20px 30px 20px 30px;
-  width: 90%;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  .intro {
-    margin-top: 50px;
-    margin-left: -60px;
-    padding-bottom: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .intro {
-    width: 100%;
-    margin-top: 70px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .intro {
-    width: 100%;
-    margin-top: 70px;
-  }
-}
-
-.intro h1 {
-  color: #95B4F2;
+.titel h1 {
   font-family: "Saira", sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 20px;
+  font-size: 50px;
+  color: #F2E9DF;
+  margin-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-  .intro h1 {
-    font-size: 28px;
-  }
+.intro {
+  margin-top: 40px;
 }
 
-@media (min-width: 992px) {
-  .intro h1 {
-    font-size: 60px;
-    text-align: center;
-  }
+.intro h2 {
+  font-family: "Saira", sans-serif;
+  font-size: 30px;
+  color: #FE9C8F;
 }
 
 .intro p {
-  color: #95B4F2;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  padding-top: 40px;
-  text-align: left;
+  font-size: 18px;
+  color: #F2E9DF;
 }
 
-@media (min-width: 768px) {
-  .intro p {
-    font-size: 18px;
-    padding-top: 50px;
-  }
+.uitleg {
+  text-align: right;
+  margin-bottom: 60px;
 }
 
-@media (min-width: 992px) {
-  .intro p {
-    font-size: 18px;
-    padding-top: 60px;
-    text-align: right;
-    padding-right: 30px;
-  }
+.uitleg h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #FE9C8F;
 }
 
 /* *************************************************************************
-SYMPTOMEN
+PROGRESS BAR
 ************************************************************************* */
-.vraag-symptomen {
-  margin-top: 60px;
-  font-family: "Saira", sans-serif;
-  font-size: 24px;
-  color: #95B4F2;
-  margin-left: 20px;
+.bg-scarf {
+  background-image: url("../images/progress-scarf.png");
+  background-size: 100%;
+  background-color: white;
 }
 
-@media (min-width: 768px) {
-  .vraag-symptomen {
-    margin-left: 0px;
-  }
-}
-
-@media (min-width: 992px) {
-  .vraag-symptomen {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .vraag-symptomen {
-    margin-left: 150px;
-    margin-bottom: 20px;
-  }
-}
-
-.row .symptomen {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-@media (min-width: 768px) {
-  .row .symptomen {
-    margin-left: -150px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 992px) {
-  .row .symptomen {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .row .symptomen {
-    margin-left: 100px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-  }
-}
-
-.symptoom-img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.symptoom-text {
-  color: #FE9C8F;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-.right {
-  margin-bottom: 50px;
+.progress {
+  border-style: solid;
+  border-color: #FE9C8F;
+  border-width: 1px;
+  background-color: white;
+  height: 30px;
 }
 
 /* *************************************************************************
