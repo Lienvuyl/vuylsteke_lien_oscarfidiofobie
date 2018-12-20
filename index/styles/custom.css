@@ -98,7 +98,6 @@ navigatie desktop
 .nav-item {
   list-style-type: none;
   padding-bottom: 10px;
-  padding-left: 10px;
   font-family: "Saira", sans-serif;
 }
 
@@ -110,6 +109,7 @@ navigatie desktop
 .nav-item a:hover {
   background-color: #F2E9DF;
   color: #FE9C8F;
+  padding-left: 10px;
 }
 
 /* *************************************************************************

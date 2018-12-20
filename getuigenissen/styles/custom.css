@@ -114,11 +114,17 @@ getuigenissen
 @media (min-width: 992px) {
   .inleiding {
     font-size: 32px;
-    margin-left: 0px;
-    margin-right: 100px;
+    margin-left: -20px;
+    margin-right: 200px;
     margin-bottom: 0px;
     color: white;
     text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inleiding {
+    margin-right: 300px;
   }
 }
 
@@ -129,6 +135,12 @@ getuigenissen
 @media (min-width: 768px) {
   .getuigenissen-1 {
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .getuigenissen-1 {
+    margin-top: 20px;
   }
 }
 
@@ -164,7 +176,6 @@ getuigenissen
     width: 200px;
     height: 200px;
     margin-bottom: 40px;
-    margin-top: 20px;
   }
 }
 
@@ -173,7 +184,6 @@ getuigenissen
     width: 250px;
     height: 250px;
     margin-bottom: 40px;
-    margin-top: 40px;
   }
 }
 
@@ -288,7 +298,6 @@ navigatie desktop
     display: block;
     padding-top: 70px;
     padding-left: 30px;
-    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
   }
 }
 
@@ -306,7 +315,7 @@ navigatie desktop
 .nav-item a:hover {
   background-color: #F2E9DF;
   color: #FE9C8F;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 /* *************************************************************************
@@ -350,16 +359,16 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-color: #FE9C8F;
+    background-image: url("../images/snake-2.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 700px;
   }
 }
 
 @media (min-width: 1200px) {
   .ill-scarf {
-    height: 1000px;
+    height: 900px;
   }
 }
 

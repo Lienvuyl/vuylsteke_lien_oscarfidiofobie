@@ -110,7 +110,7 @@ navigatie desktop
 .nav-item a:hover {
   background-color: #F2E9DF;
   color: #FE9C8F;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 /* *************************************************************************

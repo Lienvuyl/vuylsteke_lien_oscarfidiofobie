@@ -110,7 +110,7 @@ navigatie desktop
 .nav-item a:hover {
   background-color: #F2E9DF;
   color: #FE9C8F;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 /* *************************************************************************
@@ -119,7 +119,7 @@ achtergrond
 .bg1 {
   background-image: url("../images/bg1-mobiel.jpg");
   background-size: 100%;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
