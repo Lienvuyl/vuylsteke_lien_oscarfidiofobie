@@ -154,7 +154,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-color: #FE9C8F;
+    background-image: url("../images/snake-3.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;

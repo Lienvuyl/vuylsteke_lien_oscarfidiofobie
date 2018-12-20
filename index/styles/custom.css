@@ -92,13 +92,13 @@ navigatie desktop
     display: block;
     padding-top: 70px;
     padding-left: 30px;
-    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
   }
 }
 
 .nav-item {
   list-style-type: none;
   padding-bottom: 10px;
+  padding-left: 10px;
   font-family: "Saira", sans-serif;
 }
 
@@ -110,7 +110,6 @@ navigatie desktop
 .nav-item a:hover {
   background-color: #F2E9DF;
   color: #FE9C8F;
-  padding: 10px;
 }
 
 /* *************************************************************************
@@ -154,7 +153,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../images/snake1-desktop.png");
+    background-image: url("../images/snake1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;

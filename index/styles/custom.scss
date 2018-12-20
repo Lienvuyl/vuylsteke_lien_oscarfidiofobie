@@ -84,7 +84,7 @@ navigatie desktop
     @media (min-width: $breekpunt3) {
             display: block;
             padding-top: 70px;
-            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+            padding-left: 30px;
     
         }
 }
@@ -92,6 +92,7 @@ navigatie desktop
 .nav-item{
     list-style-type: none;
     padding-bottom: 10px;
+    padding-left: 10px;
     font-family: $font1;
 
     .nav-link{
@@ -102,7 +103,6 @@ navigatie desktop
 .nav-item a:hover{
     background-color:$color3;
     color: $color1;
-    padding: 10px;
 }
 
   /* *************************************************************************
@@ -135,7 +135,7 @@ illustratie sjaal
 display: none;
     @media (min-width: $breekpunt3){
     display: block;
-    background-image: url("../images/snake1-desktop.png");
+    background-image: url("../images/snake1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;}

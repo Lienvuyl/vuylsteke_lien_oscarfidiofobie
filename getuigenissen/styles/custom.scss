@@ -1,4 +1,7 @@
 
+body{
+    background-color: green;
+}
 /* *************************************************************************
 variabelen
 ************************************************************************* */
@@ -88,7 +91,6 @@ getuigenissen
     margin-bottom: 20px;
     text-align: center;
     color: $color1;
-    
     @media (min-width: $breekpunt1){
         text-align: left;
         font-size: 32px;
@@ -117,8 +119,9 @@ getuigenissen
     @media (min-width:$breepunt3){
         margin-top: 20px;
     }
+}
 
-}.img__wrap{
+.img__wrap{
     position: relative;
     width: 300px;
     height: 300px;
@@ -228,7 +231,7 @@ navigatie desktop
     @media (min-width: $breekpunt3) {
             display: block;
             padding-top: 70px;
-            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+            padding-left: 30px;
     
         }
 }
@@ -279,7 +282,7 @@ illustratie sjaal
 display: none;
     @media (min-width: $breekpunt3){
     display: block;
-    background-color: $color1;
+    background-image: url("../images/snake-2.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;}
@@ -483,6 +486,3 @@ label, input {
     background-color: $color3;
     color: $color2;
 }
-
-
- 
